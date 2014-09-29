@@ -1,6 +1,8 @@
 package im.wsb.photowall;
 
 import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.os.Handler;
 import android.service.wallpaper.WallpaperService;
 import android.util.Log;
@@ -33,9 +35,19 @@ public class PhotoWallService extends WallpaperService {
       }
     };
     private PhotoWallRenderer mRenderer;
+    private Paint mPlaceHolderBgPaint;
+    private Paint mPlaceHolderFgPaint;
 
     public PhotoWallEngine() {
       mRenderer = new PhotoWallRenderer(PhotoWallService.this);
+      mPlaceHolderBgPaint = new Paint();
+      mPlaceHolderBgPaint.setColor(Color.argb(255, 51, 181, 229));
+      mPlaceHolderFgPaint = new Paint();
+      mPlaceHolderFgPaint.setStyle(Paint.Style.FILL);
+      mPlaceHolderFgPaint.setColor(Color.WHITE);
+      mPlaceHolderFgPaint.setTextSize(48);
+      mPlaceHolderFgPaint.setTextAlign(Paint.Align.CENTER);
+      drawFrame();
       PhotoWallApplication.get().getFriends().subscribe(new Action1<FriendResponse>() {
         @Override
         public void call(FriendResponse friendResponse) {
@@ -86,7 +98,8 @@ public class PhotoWallService extends WallpaperService {
     }
 
     private void renderPlaceHolder(Canvas canvas) {
-      Log.d("WSB", "placeholder rendering");
+      canvas.drawRect(0, 0, canvas.getWidth(), canvas.getHeight(), mPlaceHolderBgPaint);
+      canvas.drawText("Connect to Facebook in Settings", canvas.getWidth() / 2, canvas.getHeight() / 2, mPlaceHolderFgPaint);
     }
 
   }

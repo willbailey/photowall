@@ -13,6 +13,9 @@ import android.widget.SeekBar;
 import com.facebook.Session;
 import com.facebook.UiLifecycleHelper;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import rx.Subscription;
 import rx.android.observables.AndroidObservable;
 import rx.android.schedulers.AndroidSchedulers;
@@ -94,7 +97,11 @@ public class SettingsActivity extends Activity {
     mFacebookConnectButton.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        connectFacebook();
+        if (Session.getActiveSession() != null && Session.getActiveSession().isOpened()) {
+          disconnectFacebook();
+        } else {
+          connectFacebook();
+        }
       }
     });
   }
@@ -116,8 +123,14 @@ public class SettingsActivity extends Activity {
   }
 
   private void connectFacebook() {
-    mFacebookConnectButton.setEnabled(false);
-    Session.openActiveSession(this, true, PhotoWallApplication.get());
+    List<String> permissions = new ArrayList<String>();
+    permissions.add("user_friends");
+    permissions.add("user_photos");
+    Session.openActiveSession(this, true, permissions, PhotoWallApplication.get());
+  }
+
+  private void disconnectFacebook() {
+    PhotoWallApplication.get().disconnectFacebook();
   }
 
   @Override
@@ -131,10 +144,10 @@ public class SettingsActivity extends Activity {
               @Override
               public void call(Session session) {
                 if (session == null || !session.isOpened()) {
-                  mFacebookConnectButton.setEnabled(true);
+//                  mFacebookConnectButton.setEnabled(true);
                   mFacebookConnectButton.setText("Connect Facebook");
                 } else {
-                  mFacebookConnectButton.setEnabled(false);
+//                  mFacebookConnectButton.setEnabled(false);
                   mFacebookConnectButton.setText("Facebook Connected");
                 }
               }

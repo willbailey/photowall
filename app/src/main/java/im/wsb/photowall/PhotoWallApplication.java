@@ -5,9 +5,12 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 
+import com.facebook.Response;
 import com.facebook.Session;
 import com.facebook.SessionState;
 import com.google.gson.GsonBuilder;
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
 
 import rx.Observable;
 import rx.functions.Action1;
@@ -17,11 +20,12 @@ import rx.subjects.BehaviorSubject;
 public class PhotoWallApplication extends Application implements Session.StatusCallback {
   private static PhotoWallApplication sInstance;
 
-  private SharedPreferences mSharedPreferences;
   private final BehaviorSubject<FriendResponse> mFriendResponseSubject = BehaviorSubject.create();
   private final BehaviorSubject<Session> mFacebookSessionSubject = BehaviorSubject.create();
   private final BehaviorSubject<Integer> mNumberOfColumns = BehaviorSubject.create();
   private final BehaviorSubject<Float> mFlipInterval = BehaviorSubject.create();
+  private SharedPreferences mSharedPreferences;
+  private Picasso mPicasso;
 
   public static PhotoWallApplication get() {
     return sInstance;
@@ -31,11 +35,12 @@ public class PhotoWallApplication extends Application implements Session.StatusC
   public void onCreate() {
     super.onCreate();
     sInstance = this;
+    mPicasso = Picasso.with(this);
 
     mSharedPreferences = getSharedPreferences(Constants.PREFS_FILENAME, Context.MODE_PRIVATE);
     mFacebookSessionSubject.onNext(Session.openActiveSessionFromCache(this));
 
-//    loadFriendsFromCache();
+    loadFriendsFromCache();
     loadFriendsFromNetwork();
 
     mNumberOfColumns.onNext(mSharedPreferences.getInt("numberOfColumns", Constants.DEFAULT_COLS));
@@ -107,11 +112,25 @@ public class PhotoWallApplication extends Application implements Session.StatusC
         });
   }
 
+  public void disconnectFacebook() {
+    if (Session.getActiveSession() != null) {
+      Session.getActiveSession().closeAndClearTokenInformation();
+    }
+    mSharedPreferences.edit().clear();
+    mFacebookSessionSubject.onNext(Session.getActiveSession());
+  }
+
+  public void prefetch(String url) {
+    mPicasso.load(url).fetch();
+  }
+
+  public void fetchInto(String url, Target target) {
+    mPicasso.load(url).into(target);
+  }
+
   @Override
   public void call(Session session, SessionState state, Exception exception) {
-    if (session.isOpened()) {
-      mFacebookSessionSubject.onNext(session);
-    }
+    mFacebookSessionSubject.onNext(session);
   }
 
 }

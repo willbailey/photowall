@@ -1,8 +1,6 @@
 package im.wsb.photowall;
 
 import android.content.Context;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
@@ -12,6 +10,9 @@ import java.util.List;
 import java.util.Random;
 
 public class FriendResponse {
+
+  private static Picasso picasso = Picasso.with(PhotoWallApplication.get());
+
   public List<Friend> data = new ArrayList<Friend>();
   public Paging paging = new Paging();
 
@@ -29,14 +30,11 @@ public class FriendResponse {
     public String name;
 
     public Friend() {
-      Picasso.with(PhotoWallApplication.get()).load(getProfilePictureUrl()).fetch();
+      PhotoWallApplication.get().prefetch(getProfilePictureUrl());
     }
 
     public void getProfilePhoto(Context context, Target target) {
-      Picasso
-          .with(context)
-          .load(getProfilePictureUrl())
-          .into(target);
+      PhotoWallApplication.get().fetchInto(getProfilePictureUrl(), target);
     }
 
     public String getProfilePictureUrl() {
