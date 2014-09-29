@@ -161,9 +161,6 @@ public class TileView {
   }
 
   public void startFlip() {
-    Side sideToSet = mCurrentSide == Side.FRONT ? Side.BACK : Side.FRONT;
-//    setBitmapForSide(mPhotoManager.getRandomBitmap(mWidth), sideToSet);
-    setFriendForSide(mFriendResponse.randomFriend(), sideToSet);
     mStartFlippingAt = getCurrentTime();
     mFlipping = true;
     mFlippedDrawnSide = false;
@@ -172,7 +169,9 @@ public class TileView {
   public void endFlip() {
     mStartFlippingAt = 0;
     mFlipping = false;
+    Side sideToSet = mCurrentSide;
     mCurrentSide = mCurrentSide == Side.FRONT ? Side.BACK : Side.FRONT;
+    setFriendForSide(mFriendResponse.randomFriend(), sideToSet);
   }
 
   public boolean needsDraw() {
