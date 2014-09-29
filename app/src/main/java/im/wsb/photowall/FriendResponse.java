@@ -7,12 +7,13 @@ import android.graphics.drawable.ColorDrawable;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class FriendResponse {
-  public List<Friend> data;
-  public Paging paging;
+  public List<Friend> data = new ArrayList<Friend>();
+  public Paging paging = new Paging();
 
   public Friend randomFriend() {
     int rand = new Random().nextInt(data.size());

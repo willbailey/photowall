@@ -1,18 +1,10 @@
 package im.wsb.photowall;
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.graphics.Canvas;
 import android.os.Handler;
 import android.service.wallpaper.WallpaperService;
 import android.util.Log;
 import android.view.SurfaceHolder;
-
-import com.facebook.Session;
-import com.google.gson.GsonBuilder;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import rx.functions.Action1;
 
@@ -20,34 +12,11 @@ public class PhotoWallService extends WallpaperService {
 
   private static final String TAG = PhotoWallService.class.getSimpleName();
   private Handler mHandler = new Handler();
-  private SharedPreferences mSharedPreferences;
-  private PhotoWallRenderer mRenderer;
   private FriendResponse mFriendResponse;
 
   @Override
   public void onCreate() {
     super.onCreate();
-    mRenderer = new PhotoWallRenderer(PhotoWallService.this);
-    loadFriendsFromCache();
-    Session session = Session.openActiveSessionFromCache(this);
-    if (session == null || !session.isOpened()) {
-      return;
-    }
-    FacebookApi.get().getFriends().subscribe(new Action1<FriendResponse>() {
-      @Override
-      public void call(FriendResponse friendResponse) {
-      }
-    });
-  }
-
-  private void loadFriendsFromCache() {
-    mSharedPreferences = getSharedPreferences(Constants.PREFS_FILENAME, Context.MODE_PRIVATE);
-    String friendsJson = mSharedPreferences.getString("friendsResponse", "{}");
-    FriendResponse friendResponse =
-        new GsonBuilder().create().fromJson(friendsJson, FriendResponse.class);
-    Log.d("WSB", "friendResponse" + friendResponse);
-    mFriendResponse = friendResponse;
-    mRenderer.setFriendResponse(mFriendResponse);
   }
 
   @Override
@@ -63,8 +32,19 @@ public class PhotoWallService extends WallpaperService {
         drawFrame();
       }
     };
+    private PhotoWallRenderer mRenderer;
 
     public PhotoWallEngine() {
+      mRenderer = new PhotoWallRenderer(PhotoWallService.this);
+      PhotoWallApplication.get().getFriends().subscribe(new Action1<FriendResponse>() {
+        @Override
+        public void call(FriendResponse friendResponse) {
+          Log.d("WSB", "update data:" + friendResponse.data.size());
+          mFriendResponse = friendResponse;
+          mRenderer.setFriendResponse(friendResponse);
+          drawFrame();
+        }
+      });
     }
 
     @Override
@@ -81,21 +61,22 @@ public class PhotoWallService extends WallpaperService {
     }
 
     private void drawFrame() {
-      if (mFriendResponse == null) {
-        renderPlaceHolder();
-        return;
-      }
       SurfaceHolder holder = getSurfaceHolder();
       Canvas canvas = holder.lockCanvas();
       if (canvas == null) {
         return;
       }
       try {
-        int interval = mRenderer.drawFrame(canvas);
-        if (interval == 0) {
+        if (mFriendResponse == null || mFriendResponse.data.isEmpty()) {
+          renderPlaceHolder(canvas);
           mHandler.postDelayed(mRunnable, 30);
         } else {
-          mHandler.postDelayed(mRunnable, interval);
+          int interval = mRenderer.drawFrame(canvas);
+          if (interval == 0) {
+            mHandler.postDelayed(mRunnable, 30);
+          } else {
+            mHandler.postDelayed(mRunnable, interval);
+          }
         }
       } catch (Exception e) {
         Log.e(TAG, "fail", e);
@@ -104,8 +85,8 @@ public class PhotoWallService extends WallpaperService {
       }
     }
 
-    private void renderPlaceHolder() {
-
+    private void renderPlaceHolder(Canvas canvas) {
+      Log.d("WSB", "placeholder rendering");
     }
 
   }

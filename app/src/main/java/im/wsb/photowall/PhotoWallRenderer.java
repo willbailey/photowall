@@ -9,16 +9,19 @@ import android.graphics.Paint;
 import android.graphics.Picture;
 import android.graphics.Rect;
 import android.os.SystemClock;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Random;
 
+import rx.functions.Action1;
+
 public class PhotoWallRenderer {
 
-  private static final int FLIP_INTERVAL_MS = 100;
-  private static final int COLS = 5;
+  private static int FLIP_INTERVAL_MS = 100;
+  private static int COLS = 5;
 
   private final List<TileView> mTileList;
   private final List<TileView> mFlippingTiles;
@@ -33,8 +36,8 @@ public class PhotoWallRenderer {
   private long mLastFlipStartTs;
   private Bitmap mCachedBitmap;
   private int mDraws;
-  private int mHeight;
-  private int mWidth;
+  private int mHeight = 0;
+  private int mWidth = 0;
 
   public PhotoWallRenderer(Context context) {
     mContext = context;
@@ -47,9 +50,25 @@ public class PhotoWallRenderer {
     mClearPaint = new Paint();
     mClearPaint.setStyle(Paint.Style.FILL);
     mClearPaint.setColor(Color.BLACK);
+
+    PhotoWallApplication.get().getNumberOfColumns().subscribe(new Action1<Integer>() {
+      @Override
+      public void call(Integer integer) {
+        COLS = integer;
+        onSizeChanged(mWidth, mHeight);
+      }
+    });
+
+    PhotoWallApplication.get().getFlipInterval().subscribe(new Action1<Float>() {
+      @Override
+      public void call(Float interval) {
+        FLIP_INTERVAL_MS = (int) (interval * 1000);
+      }
+    });
   }
 
   public void setFriendResponse(FriendResponse friendResponse) {
+    Log.d("WSB", "setFriendResponse:" + friendResponse.data.size());
     mFriendResponse = friendResponse;
     onSizeChanged(mWidth, mHeight);
   }
@@ -60,6 +79,11 @@ public class PhotoWallRenderer {
     mTileList.clear();
     mTileMatrix.clear();
     mDraws = 0;
+
+    if (mFriendResponse == null || mFriendResponse.data.isEmpty()) {
+      return;
+    }
+
     int tileSize = width / COLS;
     for (int i = 0; i < width; i+=tileSize) {
       List<TileView> columnList = new ArrayList<TileView>();

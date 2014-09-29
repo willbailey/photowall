@@ -1,21 +1,13 @@
 package im.wsb.photowall;
 
 import com.facebook.Session;
-import com.facebook.SessionState;
 
-import java.util.List;
-import java.util.Map;
-
-import retrofit.Callback;
 import retrofit.RestAdapter;
-import retrofit.RetrofitError;
-import retrofit.client.Response;
 import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
-public class FacebookApi implements Session.StatusCallback {
+public class FacebookApi {
 
   private static FacebookApi __instance = new FacebookApi();
   private final FacebookService mFacebookService;
@@ -37,7 +29,4 @@ public class FacebookApi implements Session.StatusCallback {
         .observeOn(AndroidSchedulers.mainThread());
   }
 
-  @Override
-  public void call(Session session, SessionState state, Exception exception) {
-  }
 }

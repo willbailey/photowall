@@ -124,7 +124,6 @@ public class TileView {
 
       @Override
       public void onPrepareLoad(Drawable placeHolderDrawable) {
-        Log.e("WSB", "onPrepareLoad");
       }
     };
     if (side == Side.BACK) {
