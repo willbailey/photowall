@@ -123,10 +123,7 @@ public class SettingsActivity extends Activity {
   }
 
   private void connectFacebook() {
-    List<String> permissions = new ArrayList<String>();
-    permissions.add("user_friends");
-    permissions.add("user_photos");
-    Session.openActiveSession(this, true, permissions, PhotoWallApplication.get());
+    Session.openActiveSession(this, true, PhotoWallApplication.get());
   }
 
   private void disconnectFacebook() {
@@ -230,18 +227,5 @@ public class SettingsActivity extends Activity {
     super.onSaveInstanceState(outState);
     mFacebookUiLifecycleHelper.onSaveInstanceState(outState);
   }
-
-  private float mapValueInRange(
-      float value,
-      float fromLow,
-      float fromHigh,
-      float toLow,
-      float toHigh) {
-    float fromRangeSize = fromHigh - fromLow;
-    float toRangeSize = toHigh - toLow;
-    float valueScale = (value - fromLow) / fromRangeSize;
-    return toLow + (valueScale * toRangeSize);
-  }
-
 
 }

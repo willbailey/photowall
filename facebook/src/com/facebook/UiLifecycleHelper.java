@@ -66,15 +66,10 @@ public class UiLifecycleHelper {
         if (activity == null) {
             throw new IllegalArgumentException(ACTIVITY_NULL_MESSAGE);
         }
-
         this.activity = activity;
         this.callback = callback;
         this.receiver = new ActiveSessionBroadcastReceiver();
         this.broadcastManager = LocalBroadcastManager.getInstance(activity);
-        // initialize SDK
-        Settings.sdkInitialize(activity);
-        // Make sure we've loaded default settings if we haven't already.
-        Settings.loadDefaultsFromMetadataIfNeeded(activity);
     }
 
     /**
@@ -269,7 +264,14 @@ public class UiLifecycleHelper {
             return true;
         }
 
-        UUID callId = NativeProtocol.getCallIdFromIntent(data);
+        String callIdString = data.getStringExtra(NativeProtocol.EXTRA_PROTOCOL_CALL_ID);
+        UUID callId = null;
+        if (callIdString != null) {
+            try {
+                callId = UUID.fromString(callIdString);
+            } catch (IllegalArgumentException exception) {
+            }
+        }
 
         // Was this result for the call we are waiting on?
         if (callId != null && pendingFacebookDialogCall.getCallId().equals(callId)) {

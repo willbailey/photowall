@@ -24,9 +24,8 @@ import android.os.ParcelFileDescriptor;
 import android.util.Log;
 import android.util.Pair;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.UUID;
+import java.io.*;
+import java.util.*;
 
 /**
  * <p>Implements a <a href="http://developer.android.com/reference/android/content/ContentProvider.html">

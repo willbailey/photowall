@@ -166,14 +166,13 @@ containing a value of this type.
         public static int com_facebook_loginview_padding_right=0x7f060003;
         public static int com_facebook_loginview_padding_top=0x7f060004;
         public static int com_facebook_loginview_text_size=0x7f060005;
-        public static int com_facebook_picker_divider_width=0x7f06000d;
+        public static int com_facebook_picker_divider_width=0x7f06000c;
         public static int com_facebook_picker_place_image_size=0x7f060006;
         public static int com_facebook_profilepictureview_preset_size_large=0x7f060007;
         public static int com_facebook_profilepictureview_preset_size_normal=0x7f060008;
         public static int com_facebook_profilepictureview_preset_size_small=0x7f060009;
-        public static int com_facebook_tooltip_horizontal_padding=0x7f06000a;
-        public static int com_facebook_usersettingsfragment_profile_picture_height=0x7f06000b;
-        public static int com_facebook_usersettingsfragment_profile_picture_width=0x7f06000c;
+        public static int com_facebook_usersettingsfragment_profile_picture_height=0x7f06000a;
+        public static int com_facebook_usersettingsfragment_profile_picture_width=0x7f06000b;
     }
     public static final class drawable {
         public static int com_facebook_button_blue=0x7f020000;
@@ -192,7 +191,7 @@ containing a value of this type.
         public static int com_facebook_list_section_header_background=0x7f02000d;
         public static int com_facebook_loginbutton_silver=0x7f02000e;
         public static int com_facebook_logo=0x7f02000f;
-        public static int com_facebook_picker_default_separator_color=0x7f020028;
+        public static int com_facebook_picker_default_separator_color=0x7f020020;
         public static int com_facebook_picker_item_background=0x7f020010;
         public static int com_facebook_picker_list_focused=0x7f020011;
         public static int com_facebook_picker_list_longpressed=0x7f020012;
@@ -206,21 +205,11 @@ containing a value of this type.
         public static int com_facebook_profile_default_icon=0x7f02001a;
         public static int com_facebook_profile_picture_blank_portrait=0x7f02001b;
         public static int com_facebook_profile_picture_blank_square=0x7f02001c;
-        public static int com_facebook_tooltip_black_background=0x7f02001d;
-        public static int com_facebook_tooltip_black_bottomnub=0x7f02001e;
-        public static int com_facebook_tooltip_black_topnub=0x7f02001f;
-        public static int com_facebook_tooltip_black_xout=0x7f020020;
-        public static int com_facebook_tooltip_blue_background=0x7f020021;
-        public static int com_facebook_tooltip_blue_bottomnub=0x7f020022;
-        public static int com_facebook_tooltip_blue_topnub=0x7f020023;
-        public static int com_facebook_tooltip_blue_xout=0x7f020024;
-        public static int com_facebook_top_background=0x7f020025;
-        public static int com_facebook_top_button=0x7f020026;
-        public static int com_facebook_usersettingsfragment_background_gradient=0x7f020027;
+        public static int com_facebook_top_background=0x7f02001d;
+        public static int com_facebook_top_button=0x7f02001e;
+        public static int com_facebook_usersettingsfragment_background_gradient=0x7f02001f;
     }
     public static final class id {
-        public static int com_facebook_body_frame=0x7f050015;
-        public static int com_facebook_button_xout=0x7f050017;
         public static int com_facebook_login_activity_progress_bar=0x7f050005;
         public static int com_facebook_picker_activity_circle=0x7f050004;
         public static int com_facebook_picker_checkbox=0x7f050007;
@@ -238,12 +227,9 @@ containing a value of this type.
         public static int com_facebook_picker_title_bar_stub=0x7f050010;
         public static int com_facebook_picker_top_bar=0x7f05000d;
         public static int com_facebook_search_bar_view=0x7f050013;
-        public static int com_facebook_tooltip_bubble_view_bottom_pointer=0x7f050019;
-        public static int com_facebook_tooltip_bubble_view_text_body=0x7f050018;
-        public static int com_facebook_tooltip_bubble_view_top_pointer=0x7f050016;
-        public static int com_facebook_usersettingsfragment_login_button=0x7f05001c;
-        public static int com_facebook_usersettingsfragment_logo_image=0x7f05001a;
-        public static int com_facebook_usersettingsfragment_profile_name=0x7f05001b;
+        public static int com_facebook_usersettingsfragment_login_button=0x7f050017;
+        public static int com_facebook_usersettingsfragment_logo_image=0x7f050015;
+        public static int com_facebook_usersettingsfragment_profile_name=0x7f050016;
         public static int large=0x7f050002;
         public static int normal=0x7f050001;
         public static int picker_subtitle=0x7f050012;
@@ -263,8 +249,7 @@ containing a value of this type.
         public static int com_facebook_placepickerfragment=0x7f03000a;
         public static int com_facebook_placepickerfragment_list_row=0x7f03000b;
         public static int com_facebook_search_bar_layout=0x7f03000c;
-        public static int com_facebook_tooltip_bubble=0x7f03000d;
-        public static int com_facebook_usersettingsfragment=0x7f03000e;
+        public static int com_facebook_usersettingsfragment=0x7f03000d;
     }
     public static final class string {
         public static int com_facebook_choose_friends=0x7f070000;
@@ -289,15 +274,13 @@ containing a value of this type.
         public static int com_facebook_requesterror_reconnect=0x7f070013;
         public static int com_facebook_requesterror_relogin=0x7f070014;
         public static int com_facebook_requesterror_web_login=0x7f070015;
-        public static int com_facebook_tooltip_default=0x7f070016;
-        public static int com_facebook_usersettingsfragment_log_in_button=0x7f070017;
-        public static int com_facebook_usersettingsfragment_logged_in=0x7f070018;
-        public static int com_facebook_usersettingsfragment_not_logged_in=0x7f070019;
+        public static int com_facebook_usersettingsfragment_log_in_button=0x7f070016;
+        public static int com_facebook_usersettingsfragment_logged_in=0x7f070017;
+        public static int com_facebook_usersettingsfragment_not_logged_in=0x7f070018;
     }
     public static final class style {
         public static int com_facebook_loginview_default_style=0x7f080000;
         public static int com_facebook_loginview_silver_style=0x7f080001;
-        public static int tooltip_bubble_text=0x7f080002;
     }
     public static final class styleable {
         /** Attributes that can be used with a com_facebook_friend_picker_fragment.

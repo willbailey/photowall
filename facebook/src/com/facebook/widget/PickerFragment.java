@@ -32,13 +32,10 @@ import android.view.ViewGroup;
 import android.view.ViewStub;
 import android.view.animation.AlphaAnimation;
 import android.widget.*;
-import com.facebook.FacebookException;
-import com.facebook.Request;
-import com.facebook.Session;
-import com.facebook.SessionState;
+import com.facebook.*;
 import com.facebook.android.R;
-import com.facebook.internal.SessionTracker;
 import com.facebook.model.GraphObject;
+import com.facebook.internal.SessionTracker;
 
 import java.util.*;
 
@@ -906,7 +903,7 @@ public abstract class PickerFragment<T extends GraphObject> extends Fragment {
 
         public void startLoading(Request request) {
             if (loader != null) {
-                loader.startLoading(request, canSkipRoundTripIfCached());
+                loader.startLoading(request, true);
                 onStartLoading(loader, request);
             }
         }
@@ -929,10 +926,6 @@ public abstract class PickerFragment<T extends GraphObject> extends Fragment {
 
         protected void onLoadFinished(GraphObjectPagingLoader<T> loader, SimpleGraphObjectCursor<T> data) {
             updateAdapter(data);
-        }
-
-        protected boolean canSkipRoundTripIfCached() {
-            return true;
         }
     }
 

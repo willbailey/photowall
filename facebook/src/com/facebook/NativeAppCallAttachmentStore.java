@@ -24,10 +24,7 @@ import com.facebook.internal.Validate;
 
 import java.io.*;
 import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 /**
  * <p>This class works in conjunction with {@link NativeAppCallContentProvider} to allow apps to attach binary

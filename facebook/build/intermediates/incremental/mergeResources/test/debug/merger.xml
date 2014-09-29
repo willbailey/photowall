@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merger version="2" >
 
-    <dataSet config="20.0.0" >
-        <source path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/res" />
-    </dataSet>
     <dataSet config="debug" >
         <source path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res" >
             <file
@@ -212,46 +209,6 @@
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
-                name="com_facebook_tooltip_black_background"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-hdpi-v4/com_facebook_tooltip_black_background.9.png"
-                qualifiers="hdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_bottomnub"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-hdpi-v4/com_facebook_tooltip_black_bottomnub.png"
-                qualifiers="hdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_topnub"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-hdpi-v4/com_facebook_tooltip_black_topnub.png"
-                qualifiers="hdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_xout"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-hdpi-v4/com_facebook_tooltip_black_xout.png"
-                qualifiers="hdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_background"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-hdpi-v4/com_facebook_tooltip_blue_background.9.png"
-                qualifiers="hdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_bottomnub"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-hdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
-                qualifiers="hdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_topnub"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-hdpi-v4/com_facebook_tooltip_blue_topnub.png"
-                qualifiers="hdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_xout"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-hdpi-v4/com_facebook_tooltip_blue_xout.png"
-                qualifiers="hdpi-v4"
-                type="drawable" />
-            <file
                 name="com_facebook_close"
                 path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-ldpi-v4/com_facebook_close.png"
                 qualifiers="ldpi-v4"
@@ -279,46 +236,6 @@
             <file
                 name="com_facebook_picker_magnifier"
                 path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-mdpi-v4/com_facebook_picker_magnifier.png"
-                qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_background"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-mdpi-v4/com_facebook_tooltip_black_background.9.png"
-                qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_bottomnub"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-mdpi-v4/com_facebook_tooltip_black_bottomnub.png"
-                qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_topnub"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-mdpi-v4/com_facebook_tooltip_black_topnub.png"
-                qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_xout"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-mdpi-v4/com_facebook_tooltip_black_xout.png"
-                qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_background"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-mdpi-v4/com_facebook_tooltip_blue_background.9.png"
-                qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_bottomnub"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-mdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
-                qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_topnub"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png"
-                qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_xout"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
@@ -369,46 +286,6 @@
             <file
                 name="com_facebook_picker_magnifier"
                 path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/com_facebook_picker_magnifier.png"
-                qualifiers="xhdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_background"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/com_facebook_tooltip_black_background.9.png"
-                qualifiers="xhdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_bottomnub"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/com_facebook_tooltip_black_bottomnub.png"
-                qualifiers="xhdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_topnub"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/com_facebook_tooltip_black_topnub.png"
-                qualifiers="xhdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_xout"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/com_facebook_tooltip_black_xout.png"
-                qualifiers="xhdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_background"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_background.9.png"
-                qualifiers="xhdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_bottomnub"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
-                qualifiers="xhdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_topnub"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_topnub.png"
-                qualifiers="xhdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_xout"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_xout.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
@@ -474,11 +351,6 @@
             <file
                 name="com_facebook_search_bar_layout"
                 path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/layout/com_facebook_search_bar_layout.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="com_facebook_tooltip_bubble"
-                path="/Users/wbailey/workspace/photowall/facebook/build/intermediates/bundles/debug/res/layout/com_facebook_tooltip_bubble.xml"
                 qualifiers=""
                 type="layout" />
             <file
@@ -567,27 +439,6 @@
 
                 <string name="com_facebook_placepicker_subtitle_catetory_only_format" >%1$s
                 </string>
-
-                <style name="tooltip_bubble_text" >
-                    <item name="android:textColor">
-@android:color/white
-                    </item>
-                    <item name="android:gravity">
-left
-                    </item>
-                    <item name="android:textSize">
-12sp
-                    </item>
-                    <item name="android:shadowDy">
--1
-                    </item>
-                    <item name="android:shadowRadius">
-0.25
-                    </item>
-                    <item name="android:shadowColor">
-#40000000
-                    </item>
-                </style>
 
                 <declare-styleable name="com_facebook_place_picker_fragment" >
                     <attr
@@ -710,8 +561,6 @@ center
                 <color name="com_facebook_usersettingsfragment_not_connected_text_color" >#A6AED7
                 </color>
 
-                <string name="com_facebook_tooltip_default" >New! You\'re in control - choose what info you want to share with apps.
-                </string>
                 <string name="com_facebook_loginview_logged_in_as" >Logged in as: %1$s
                 </string>
 
@@ -723,9 +572,6 @@ center
 
                 <color name="com_facebook_usersettingsfragment_connected_shadow_color" >#000000
                 </color>
-
-                <dimen name="com_facebook_tooltip_horizontal_padding" >10dp
-                </dimen>
 
                 <string name="com_facebook_loginview_logged_in_using_facebook" >Logged in using Facebook
                 </string>

@@ -51,7 +51,7 @@ public enum SessionDefaultAudience {
         nativeProtocolAudience = protocol;
     }
 
-    public String getNativeProtocolAudience() {
+    String getNativeProtocolAudience() {
         return nativeProtocolAudience;
     }
 }

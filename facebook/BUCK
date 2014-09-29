@@ -1,0 +1,25 @@
+android_resource(
+  name = 'res',
+  res = 'res',
+  package = 'com.facebook.android',
+)
+
+android_library(
+  name = 'facebook',
+  manifest = 'AndroidManifest.xml',
+  srcs = glob([
+    'src/**/*.java',
+  ]),
+  deps = [
+    '//apps/shots/ShotsAndroid:android-support-v4',
+    '//apps/shots/ShotsAndroid/third-party/facebook:res',
+  ],
+  visibility = [
+    '//apps/shots/ShotsAndroid:',
+  ]
+)
+
+project_config(
+  src_target = ':facebook',
+  src_roots = ['src'],
+)

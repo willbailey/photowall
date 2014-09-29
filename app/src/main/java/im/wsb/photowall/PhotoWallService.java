@@ -79,16 +79,18 @@ public class PhotoWallService extends WallpaperService {
         return;
       }
       try {
+        int interval;
         if (mFriendResponse == null || mFriendResponse.data.isEmpty()) {
           renderPlaceHolder(canvas);
           mHandler.postDelayed(mRunnable, 30);
+          interval = 0;
         } else {
-          int interval = mRenderer.drawFrame(canvas);
-          if (interval == 0) {
-            mHandler.postDelayed(mRunnable, 30);
-          } else {
-            mHandler.postDelayed(mRunnable, interval);
-          }
+          interval = mRenderer.drawFrame(canvas);
+        }
+        if (interval == 0) {
+          mHandler.postDelayed(mRunnable, 30);
+        } else {
+          mHandler.postDelayed(mRunnable, interval);
         }
       } catch (Exception e) {
         Log.e(TAG, "fail", e);

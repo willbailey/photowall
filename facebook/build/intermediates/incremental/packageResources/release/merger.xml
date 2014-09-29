@@ -209,46 +209,6 @@
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
-                name="com_facebook_tooltip_black_background"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-hdpi/com_facebook_tooltip_black_background.9.png"
-                qualifiers="hdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_bottomnub"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-hdpi/com_facebook_tooltip_black_bottomnub.png"
-                qualifiers="hdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_topnub"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-hdpi/com_facebook_tooltip_black_topnub.png"
-                qualifiers="hdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_xout"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-hdpi/com_facebook_tooltip_black_xout.png"
-                qualifiers="hdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_background"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-hdpi/com_facebook_tooltip_blue_background.9.png"
-                qualifiers="hdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_bottomnub"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-hdpi/com_facebook_tooltip_blue_bottomnub.png"
-                qualifiers="hdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_topnub"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-hdpi/com_facebook_tooltip_blue_topnub.png"
-                qualifiers="hdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_xout"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-hdpi/com_facebook_tooltip_blue_xout.png"
-                qualifiers="hdpi-v4"
-                type="drawable" />
-            <file
                 name="com_facebook_close"
                 path="/Users/wbailey/workspace/photowall/facebook/res/drawable-ldpi/com_facebook_close.png"
                 qualifiers="ldpi-v4"
@@ -276,46 +236,6 @@
             <file
                 name="com_facebook_picker_magnifier"
                 path="/Users/wbailey/workspace/photowall/facebook/res/drawable-mdpi/com_facebook_picker_magnifier.png"
-                qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_background"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-mdpi/com_facebook_tooltip_black_background.9.png"
-                qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_bottomnub"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-mdpi/com_facebook_tooltip_black_bottomnub.png"
-                qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_topnub"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-mdpi/com_facebook_tooltip_black_topnub.png"
-                qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_xout"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-mdpi/com_facebook_tooltip_black_xout.png"
-                qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_background"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-mdpi/com_facebook_tooltip_blue_background.9.png"
-                qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_bottomnub"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-mdpi/com_facebook_tooltip_blue_bottomnub.png"
-                qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_topnub"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-mdpi/com_facebook_tooltip_blue_topnub.png"
-                qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_xout"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-mdpi/com_facebook_tooltip_blue_xout.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
@@ -366,46 +286,6 @@
             <file
                 name="com_facebook_picker_magnifier"
                 path="/Users/wbailey/workspace/photowall/facebook/res/drawable-xhdpi/com_facebook_picker_magnifier.png"
-                qualifiers="xhdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_background"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-xhdpi/com_facebook_tooltip_black_background.9.png"
-                qualifiers="xhdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_bottomnub"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-xhdpi/com_facebook_tooltip_black_bottomnub.png"
-                qualifiers="xhdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_topnub"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-xhdpi/com_facebook_tooltip_black_topnub.png"
-                qualifiers="xhdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_black_xout"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-xhdpi/com_facebook_tooltip_black_xout.png"
-                qualifiers="xhdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_background"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-xhdpi/com_facebook_tooltip_blue_background.9.png"
-                qualifiers="xhdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_bottomnub"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-xhdpi/com_facebook_tooltip_blue_bottomnub.png"
-                qualifiers="xhdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_topnub"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-xhdpi/com_facebook_tooltip_blue_topnub.png"
-                qualifiers="xhdpi-v4"
-                type="drawable" />
-            <file
-                name="com_facebook_tooltip_blue_xout"
-                path="/Users/wbailey/workspace/photowall/facebook/res/drawable-xhdpi/com_facebook_tooltip_blue_xout.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
@@ -471,11 +351,6 @@
             <file
                 name="com_facebook_search_bar_layout"
                 path="/Users/wbailey/workspace/photowall/facebook/res/layout/com_facebook_search_bar_layout.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="com_facebook_tooltip_bubble"
-                path="/Users/wbailey/workspace/photowall/facebook/res/layout/com_facebook_tooltip_bubble.xml"
                 qualifiers=""
                 type="layout" />
             <file
@@ -592,19 +467,19 @@
                 </string>
                 <string name="com_facebook_requesterror_password_changed" >Your Facebook password has changed. Please log into this app again to reconnect your Facebook account.
                 </string>
-                <string name="com_facebook_choose_friends" >Choose Friends
+                <string name="com_facebook_logo_content_description" >Facebook Logo
                 </string>
                 <string name="com_facebook_loginview_log_in_button" >Log in with Facebook
                 </string>
-                <string name="com_facebook_logo_content_description" >Facebook Logo
+                <string name="com_facebook_choose_friends" >Choose Friends
                 </string>
                 <string name="com_facebook_requesterror_reconnect" >Please log into this app again to reconnect your Facebook account.
                 </string>
                 <string name="com_facebook_requesterror_web_login" >Your Facebook account is locked. Please log into www.facebook.com to continue.
                 </string>
-                <string name="com_facebook_loginview_log_out_action" >Log out
-                </string>
                 <string name="com_facebook_requesterror_permissions" >This app doesn’t have permission to do this. To change permissions, try logging into the app again.
+                </string>
+                <string name="com_facebook_loginview_log_out_action" >Log out
                 </string>
                 <string name="com_facebook_dialogloginactivity_ok_button" >OK
                 </string>
@@ -613,8 +488,6 @@
                 <string name="com_facebook_usersettingsfragment_not_logged_in" >Not logged in
                 </string>
                 <string name="com_facebook_nearby" >Nearby
-                </string>
-                <string name="com_facebook_tooltip_default" >New! You\'re in control - choose what info you want to share with apps.
                 </string>
                 <string name="com_facebook_loginview_logged_in_as" >Logged in as: %1$s
                 </string>
@@ -661,28 +534,6 @@
                 </dimen>
                 <dimen name="com_facebook_profilepictureview_preset_size_large" >180dp
                 </dimen>
-
-                <style name="tooltip_bubble_text" >
-                    <item name="android:textColor">
-@android:color/white
-                    </item>
-                    <item name="android:gravity">
-left
-                    </item>
-                    <item name="android:textSize">
-12sp
-                    </item>
-                    <item name="android:shadowDy">
--1
-                    </item>
-                    <item name="android:shadowRadius">
-0.25
-                    </item>
-                    <item name="android:shadowColor">
-#40000000
-                    </item>
-                </style>
-
                 <dimen name="com_facebook_loginview_padding_bottom" >12dp
                 </dimen>
 
@@ -719,8 +570,6 @@ center
                 </color>
 
                 <dimen name="com_facebook_loginview_text_size" >16.0sp
-                </dimen>
-                <dimen name="com_facebook_tooltip_horizontal_padding" >10dp
                 </dimen>
 
                 <style
@@ -764,11 +613,27 @@ center
                 </string>
                 <string name="com_facebook_requesterror_password_changed" >Su contraseña de Facebook ha cambiado, por favor vuelva a conectar la aplicación con Facebook.
                 </string>
+                <string name="com_facebook_requesterror_reconnect" >Se produjo un error al conectar con Facebook, por favor vuelva a conectar la aplicación con Facebook.
+                </string>
+                <string name="com_facebook_placepicker_subtitle_format" >%1$s • %2$,d estuvieron aquí
+                </string>
+                <string name="com_facebook_loading" >Cargando
+                </string>
+                <string name="com_facebook_requesterror_web_login" >Por favor, iniciar sesión a través https://www.facebook.com o https://m.facebook.com para volver a activar la aplicación para conectar con Facebook.
+                </string>
+                <string name="com_facebook_loginview_cancel_action" >Cancelar
+                </string>
+                <string name="com_facebook_choose_friends" >Elige Amigos
+                </string>
+                <string name="com_facebook_dialogloginactivity_ok_button" >Aceptar
+                </string>
+                <string name="com_facebook_loginview_log_in_button" >Iniciar sesión con Facebook
+                </string>
+                <string name="com_facebook_loginview_logged_in_as" >Sesión iniciada como: %1$s
+                </string>
                 <string name="com_facebook_loginview_log_out_action" >Cerrar sesión
                 </string>
                 <string name="com_facebook_requesterror_permissions" >Una conexión de aplicación con Facebook falló debido a permisos insuficientes, por favor, conceda los permisos de aplicaciones para realizar la operación.
-                </string>
-                <string name="com_facebook_requesterror_reconnect" >Se produjo un error al conectar con Facebook, por favor vuelva a conectar la aplicación con Facebook.
                 </string>
                 <string name="com_facebook_usersettingsfragment_logged_in" >Sesión iniciada
                 </string>
@@ -778,37 +643,21 @@ center
                 </string>
                 <string name="com_facebook_loginview_logged_in_using_facebook" >Sesión iniciada con Facebook
                 </string>
-                <string name="com_facebook_placepicker_subtitle_format" >%1$s • %2$,d estuvieron aquí
-                </string>
-                <string name="com_facebook_loading" >Cargando
-                </string>
-                <string name="com_facebook_requesterror_web_login" >Por favor, iniciar sesión a través https://www.facebook.com o https://m.facebook.com para volver a activar la aplicación para conectar con Facebook.
-                </string>
                 <string name="com_facebook_picker_done_button_text" >Aceptar
                 </string>
                 <string name="com_facebook_placepicker_subtitle_catetory_only_format" >%1$s
                 </string>
-                <string name="com_facebook_loginview_cancel_action" >Cancelar
-                </string>
                 <string name="com_facebook_internet_permission_error_message" >WebView inicio de sesión requiere permiso INTERNET
-                </string>
-                <string name="com_facebook_choose_friends" >Elige Amigos
                 </string>
                 <string name="com_facebook_placepicker_subtitle_were_here_only_format" >es:%1$,d estuvieron aquí
                 </string>
                 <string name="com_facebook_requesterror_relogin" >La aplicación no se conecta con Facebook, inicie sesión y volver a conectar esta aplicación.
                 </string>
-                <string name="com_facebook_dialogloginactivity_ok_button" >Aceptar
-                </string>
                 <string name="com_facebook_usersettingsfragment_log_in_button" >Iniciar sesión…
                 </string>
                 <string name="com_facebook_logo_content_description" >Logo de Facebook
                 </string>
-                <string name="com_facebook_loginview_log_in_button" >Iniciar sesión con Facebook
-                </string>
                 <string name="com_facebook_loginview_log_out_button" >Cerrar sesión
-                </string>
-                <string name="com_facebook_loginview_logged_in_as" >Sesión iniciada como: %1$s
                 </string>
             </file>
             <file
@@ -828,21 +677,21 @@ center
                 </string>
                 <string name="com_facebook_requesterror_reconnect" >.ארעה שגיאה בעת החיבור עם פייסבוק, חבר בבקשה מחדש את האפליקציה עם פייסבוק
                 </string>
-                <string name="com_facebook_picker_done_button_text" >בצע
-                </string>
                 <string name="com_facebook_logo_content_description" >פייסבוק לוגו
+                </string>
+                <string name="com_facebook_picker_done_button_text" >בצע
                 </string>
                 <string name="com_facebook_loginview_log_in_button" >התחבר לפייסבוק
                 </string>
                 <string name="com_facebook_loginview_logged_in_as" >מחובר בשם: %1$s
                 </string>
-                <string name="com_facebook_requesterror_relogin" >.האפליקציה אינה מחוברת לפייסבוק, אנא היכנס וחבר מחדש את האפליקציה
-                </string>
                 <string name="com_facebook_placepicker_subtitle_were_here_only_format" >%1$,d היו פה
                 </string>
-                <string name="com_facebook_internet_permission_error_title" >AndroidManifest שגיאת
+                <string name="com_facebook_requesterror_relogin" >.האפליקציה אינה מחוברת לפייסבוק, אנא היכנס וחבר מחדש את האפליקציה
                 </string>
                 <string name="com_facebook_usersettingsfragment_log_in_button" >התחבר…
+                </string>
+                <string name="com_facebook_internet_permission_error_title" >AndroidManifest שגיאת
                 </string>
                 <string name="com_facebook_internet_permission_error_message" >ההתחברות לתצוגת אתר דורשת אישור אינטרנט
                 </string>
@@ -874,41 +723,19 @@ center
             <file
                 path="/Users/wbailey/workspace/photowall/facebook/res/values-iw/strings.xml"
                 qualifiers="iw" >
-                <string name="com_facebook_requesterror_password_changed" >.הסיסמה שלך בפייסבוק השתנתה, אנא חבר מחדש את האפליקציה עם פייסבוק
-                </string>
                 <string name="com_facebook_usersettingsfragment_log_in_button" >התחבר…
                 </string>
-                <string name="com_facebook_internet_permission_error_title" >AndroidManifest שגיאת
-                </string>
-                <string name="com_facebook_picker_done_button_text" >בצע
-                </string>
                 <string name="com_facebook_loginview_log_out_button" >התנתק
-                </string>
-                <string name="com_facebook_loginview_logged_in_as" >מחובר בשם: %1$s
                 </string>
                 <string name="com_facebook_loginview_logged_in_using_facebook" >מחובר באמצעות פייסבוק
                 </string>
                 <string name="com_facebook_internet_permission_error_message" >ההתחברות לתצוגת אתר דורשת אישור אינטרנט
                 </string>
-                <string name="com_facebook_requesterror_reconnect" >.ארעה שגיאה בעת החיבור עם פייסבוק, חבר בבקשה מחדש את האפליקציה עם פייסבוק
-                </string>
                 <string name="com_facebook_loginview_log_out_action" >התנתק
                 </string>
                 <string name="com_facebook_placepicker_subtitle_catetory_only_format" >%1$s
                 </string>
-                <string name="com_facebook_logo_content_description" >פייסבוק לוגו
-                </string>
-                <string name="com_facebook_usersettingsfragment_logged_in" >מחובר
-                </string>
                 <string name="com_facebook_choose_friends" >בחר חברים
-                </string>
-                <string name="com_facebook_loading" >..מעלה
-                </string>
-                <string name="com_facebook_dialogloginactivity_ok_button" >אישור
-                </string>
-                <string name="com_facebook_nearby" >קרוב אליי
-                </string>
-                <string name="com_facebook_loginview_log_in_button" >התחבר לפייסבוק
                 </string>
                 <string name="com_facebook_placepicker_subtitle_were_here_only_format" >%1$,d היו פה
                 </string>
@@ -918,11 +745,33 @@ center
                 </string>
                 <string name="com_facebook_requesterror_permissions" >.חיבור האפליקציה עם פייסבוק נכשל בשל הרשאות לא מספקות, אנא הענק הרשאות לאפליקציה בכדי שהפעולה תוכל להתבצע
                 </string>
-                <string name="com_facebook_loginview_cancel_action" >בטל
-                </string>
                 <string name="com_facebook_requesterror_web_login" >.כדי לאפשר מחדש לאפליקציה להתחבר עם פייסבוק https://www.facebook.com או https://m.facebook.com אנא היכנס דרך
                 </string>
                 <string name="com_facebook_requesterror_relogin" >.האפליקציה אינה מחוברת לפייסבוק, אנא היכנס וחבר מחדש את האפליקציה
+                </string>
+                <string name="com_facebook_requesterror_password_changed" >.הסיסמה שלך בפייסבוק השתנתה, אנא חבר מחדש את האפליקציה עם פייסבוק
+                </string>
+                <string name="com_facebook_picker_done_button_text" >בצע
+                </string>
+                <string name="com_facebook_internet_permission_error_title" >AndroidManifest שגיאת
+                </string>
+                <string name="com_facebook_loginview_logged_in_as" >מחובר בשם: %1$s
+                </string>
+                <string name="com_facebook_requesterror_reconnect" >.ארעה שגיאה בעת החיבור עם פייסבוק, חבר בבקשה מחדש את האפליקציה עם פייסבוק
+                </string>
+                <string name="com_facebook_usersettingsfragment_logged_in" >מחובר
+                </string>
+                <string name="com_facebook_logo_content_description" >פייסבוק לוגו
+                </string>
+                <string name="com_facebook_dialogloginactivity_ok_button" >אישור
+                </string>
+                <string name="com_facebook_loading" >..מעלה
+                </string>
+                <string name="com_facebook_loginview_log_in_button" >התחבר לפייסבוק
+                </string>
+                <string name="com_facebook_nearby" >קרוב אליי
+                </string>
+                <string name="com_facebook_loginview_cancel_action" >בטל
                 </string>
             </file>
             <file

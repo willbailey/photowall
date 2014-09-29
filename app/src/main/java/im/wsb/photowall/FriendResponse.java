@@ -30,7 +30,6 @@ public class FriendResponse {
     public String name;
 
     public Friend() {
-      PhotoWallApplication.get().prefetch(getProfilePictureUrl());
     }
 
     public void getProfilePhoto(Context context, Target target) {

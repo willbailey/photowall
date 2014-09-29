@@ -104,6 +104,9 @@ public class PhotoWallApplication extends Application implements Session.StatusC
                   Log.d("WSB", "result:" + friendResponse.data.size());
                   String friendResponseJson = new GsonBuilder().create().toJson(friendResponse);
                   mSharedPreferences.edit().putString("friendsResponse", friendResponseJson);
+//                  for (FriendResponse.Friend friend : friendResponse.data) {
+//                    PhotoWallApplication.get().prefetch(friend.getProfilePictureUrl());
+//                  }
                   mFriendResponseSubject.onNext(friendResponse);
                 }
               });
@@ -118,6 +121,7 @@ public class PhotoWallApplication extends Application implements Session.StatusC
     }
     mSharedPreferences.edit().clear();
     mFacebookSessionSubject.onNext(Session.getActiveSession());
+//    mFriendResponseSubject.onNext(new FriendResponse());
   }
 
   public void prefetch(String url) {
